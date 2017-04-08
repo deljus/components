@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><meta name="author" content=""><title>Modern Business - Start Bootstrap Template</title><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><link href="css/bootstrap-custom.css" rel="stylesheet"><link href="css/loader.css" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.2/css/bootstrap-slider.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css"><link href="css/predictor.css" rel="stylesheet"></head><body><div class="container"><div class="row"><div class="col-lg-12"><h1>Slider for predictor project</h1><p>Is a plugin</p><p>Options</p><div class="col-lg-4"><table class="table table-bordered"><thead class="thead-inverse"><tr><th>#</th><th>option</th><th>default</th></tr></thead><tbody><tr><td class="row">1</td><td>header</td><td>Undefined</td></tr><tr><td class="row">2</td><td>measure</td><td>null</td></tr><tr><td class="row">3</td><td>min</td><td>0</td></tr><tr><td class="row">4</td><td>max</td><td>100</td></tr><tr><td class="row">5</td><td>step</td><td>0.1</td></tr><tr><td class="row">6</td><td>value</td><td>0</td></tr><tr><td class="row">7</td><td>handlerStyle</td><td>blue</td></tr><tr><td class="row">8</td><td>blockValMin</td><td>option ==> min</td></tr><tr><td class="row">9</td><td>blockValMax</td><td>option ==> max</td></tr></tbody></table></div><div class="col-lg-6"><table class="table table-bordered"><thead class="thead-inverse"><tr><th>#</th><th>methods</th><th>return</th><th>descriptions</th></tr></thead><tbody><tr><td class="row">1</td><td>getValue</td><td>{'handler': 'youHeader', 'value': 'currentValue'}</td><td>return handler and current value</td></tr><tr><td class="row">2</td><td>setValue</td><td>none</td><td></td></tr><tr><td class="row">3</td><td>setBlockMax</td><td>none</td><td></td></tr><tr><td class="row">4</td><td>setBlockMin</td><td>none</td><td></td></tr><tr><td class="row">5</td><td>destroy</td><td>none</td><td></td></tr></tbody></table></div><p><div class="list-slider" id="slider"></div></p><pre><code>html:
+&lt;div id="slider" class="slider"&gt;&lt;/div&gt;
+JS:
+$("#slider").listSlider({
+  header: 'Your handle',
+  min: 0,
+  max: 100,
+  step: 0.1
+})</code></pre><ul class="list-group"><li class="list-slider list-group-item" id="slider1"></li><li class="list-slider list-group-item" id="slider2"></li><li class="list-slider list-group-item" id="slider3"></li></ul><pre><code>html:
+&lt;div id="slider" class="slider"&gt;&lt;/div&gt;
+JS:
+$("#slider").listSlider({header: 'Your handle', measure: 'measure', min: 0, max: 100, step: 0.1 });
+$("#slider").listSlider({header: 'Your handle', measure: 'measure', min: 0, max: 100, step: 0.1 });</code></pre></div></div></div><script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script><script src="js/router.js"></script><script src="js/bootstrap-select.js"></script><script src="js/bootstrap-slider.js"></script><script src="https://cimm.kpfu.ru/static/marvinjs/gui/lib/promise-1.0.0.min.js"></script><script src="https://cimm.kpfu.ru/static/marvinjs/js/webservices.js"></script><script src="https://cimm.kpfu.ru/static/marvinjs/js/marvinjslauncher.js"></script><script src="js/component/slider-list.plugin.js"></script><script src="js/predictor/select-setting.plugin.js"></script><script src="js/predictor/image-edit.plugin.js"></script><script src="js/predictor/chem-editor.plugin.js"></script><script src="js/predictor/app.js"></script><script>(function ($) {
+    $("#slider").listSlider();
+    $("#slider1").listSlider({
+        header: 'Your handle',
+        measure: 'measure',
+        min: -5,
+        max: 200,
+        step: 1,
+        value: 34,
+        handlerStyle: 'red',
+    });
+    $("#slider2").listSlider({
+        header: 'Your handle',
+        measure: 'measure',
+        min: -5,
+        max: 100,
+        step: 0.1,
+        handlerStyle: 'green',
+    });
+    $("#slider3").listSlider({
+        header: 'Your handle',
+        measure: 'measure',
+        min: -5,
+        max: 100,
+        step: 0.1
+    });
+
+})(jQuery);</script></body></html>
